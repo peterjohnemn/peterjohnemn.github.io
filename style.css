@@ -1,0 +1,224 @@
+body {
+    padding-top: 80px;
+    background-color: #f9fbfa;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+}
+
+.glass-navbar {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px) brightness(100%);
+    -webkit-backdrop-filter: blur(10px) brightness(100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-navbar.scrolled {
+    background: rgba(230, 223, 223, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.glass-navbar .nav-link {
+    color: #111;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.glass-navbar .nav-link:hover {
+    color: #67d3e1;
+}
+
+.glass-navbar .navbar-brand {
+    color: #000;
+    font-weight: 700;
+}
+
+.navbar.fixed-top {
+    top: 20px;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(112, 207, 219, 0.2);
+}
+
+.hero-section {
+    padding: 120px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-text h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text h3 {
+    color: #67d3e1;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    max-width: 400px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.image-bg {
+    background-color: #b7ddd8;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.rounded-image {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .hero-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .image-bg {
+        width: 220px;
+        height: 220px;
+        margin-top: 30px;
+    }
+
+    .rounded-image {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+.projects-section {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px) brightness(100%);
+    -webkit-backdrop-filter: blur(10px) brightness(100%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(13, 145, 155, 0.1);
+    padding: 80px 0;
+    margin: 60px auto;
+    width: 90%;
+}
+
+.projects-section h2 {
+    color: #01675b;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(18, 122, 141, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-teal {
+    background-color: #4db6ac;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-teal:hover {
+    background-color: #00695c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.social-icons a {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #000;
+    transform: scale(1.2);
+}
+
+.about-section {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px) brightness(100%);
+    -webkit-backdrop-filter: blur(10px) brightness(100%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(13, 145, 155, 0.1);
+    padding: 80px 0;
+    margin: 60px auto;
+    width: 90%;
+}
+
+.about-section h2 {
+    color: #01675b;
+    font-weight: 700;
+}
+
+.about-section p {
+    color: #000000;
+    line-height: 1.7;
+}
+
+.btn-teal {
+    background-color: #67d3e1;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-teal:hover {
+    background-color: #4bbbc9;
+    color: #fff;
+}
