@@ -11,7 +11,7 @@ html {
 }
 
 .glass-navbar {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(51, 50, 50, 0.25);
     backdrop-filter: blur(10px) brightness(100%);
     -webkit-backdrop-filter: blur(10px) brightness(100%);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -25,14 +25,14 @@ html {
 }
 
 .glass-navbar .nav-link {
-    color: #000000;
+    color: #ffffff;
     font-weight: 500;
     letter-spacing: 0.5px;
     transition: color 0.3s ease;
 }
 
 .glass-navbar .nav-link:hover {
-    color: #67d3e1;
+    color: #000000;
 }
 
 .glass-navbar .navbar-brand {
@@ -53,7 +53,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 60px;
     position: relative;
 }
 
@@ -63,7 +63,7 @@ html {
     justify-content: center;
     gap: 80px;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     text-align: left;
 }
 
@@ -78,6 +78,7 @@ html {
     font-weight: 700;
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    color: #f9fbfa;
 }
 
 .hero-text h3 {
@@ -87,12 +88,12 @@ html {
 
 .hero-text p {
     max-width: 400px;
-    color: #666;
+    color: #ffffff;
     margin-bottom: 15px;
 }
 
 .image-bg {
-    background-color: #67d3e1;
+    background-color: #365357;
     width: 320px;
     height: 320px;
     border-radius: 50%;
@@ -121,18 +122,18 @@ html {
 }
 
 .social-icons a {
-    color: #01675b;
+    color: #4bbbc9;
     font-size: 1.8rem;
     transition: 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #4bbbc9;
+    color: #bfe3e7;
     transform: scale(1.1);
 }
 
 .projects-section {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(51, 50, 50, 0.25);
     backdrop-filter: blur(10px) brightness(100%);
     -webkit-backdrop-filter: blur(10px) brightness(100%);
     border-radius: 20px;
@@ -144,7 +145,7 @@ html {
 }
 
 .projects-section h2 {
-    color: #01675b;
+    color: #ffffff;
     letter-spacing: 1px;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
@@ -167,7 +168,7 @@ html {
 }
 
 .about-section {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(51, 50, 50, 0.25);
     backdrop-filter: blur(10px) brightness(100%);
     -webkit-backdrop-filter: blur(10px) brightness(100%);
     border-radius: 20px;
@@ -179,12 +180,12 @@ html {
 }
 
 .about-section h2 {
-    color: #01675b;
+    color: #ffffff;
     font-weight: 700;
 }
 
 .about-section p {
-    color: #000;
+    color: #ffffff;
     line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
@@ -192,7 +193,7 @@ html {
 }
 
 .about-section p strong {
-    color: #01675b;
+    color: #e9e4e4;
     font-weight: 600;
 }
 
@@ -210,72 +211,31 @@ html {
 }
 
 .btn-teal:hover {
-    background-color: #4bbbc9;
+    background-color: #bfe3e7;
     color: #fff;
-}
-
-@media (max-width: 992px) {
-    .hero-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .hero-image {
-        order: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .hero-text {
-        order: 2;
-        align-items: center;
-    }
-
-    .social-icons {
-        order: 3;
-        position: relative !important;
-        left: auto !important;
-        top: auto !important;
-        transform: none !important;
-        flex-direction: row !important;
-        justify-content: center;
-        align-items: center;
-        margin-top: 15px;
-        gap: 25px;
-    }
-
-    .hero-text .btn-teal {
-        margin-top: 20px;
-        align-self: center;
-    }
-
-    .hero-text h1 {
-        font-size: 1.8rem;
-    }
-
-    .hero-text h3 {
-        font-size: 1.2rem;
-    }
-
-    .hero-text p {
-        font-size: 1rem;
-    }
-
-    .image-bg {
-        width: 220px;
-        height: 220px;
-    }
-
-    .rounded-image {
-        width: 90%;
-        height: 90%;
-    }
 }
 
 .navbar-logo {
     height: 50px;
     object-fit: contain;
+    max-width: 100px;
+}
+
+body {
+    background: linear-gradient(to right, #444747, #68c9cb);
+}
+
+.card {
+    background: rgba(158, 155, 155, 0.25);
+    backdrop-filter: blur(10px) brightness(100%);
+    -webkit-backdrop-filter: blur(10px) brightness(100%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(13, 145, 155, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
